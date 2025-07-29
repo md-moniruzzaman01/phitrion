@@ -59,5 +59,22 @@ public:
 int main()
 {
 
+    myQueue q;
+    int n;
+    cin >> n;
+    for (int  i = 0; i < n; i++)
+    {
+        int val;
+        cin >> val;
+        q.push(val);
+    }
+    while ( !q.empty())
+    {
+       cout << q.front () << endl;
+       q.pop();
+    }
+    
+
+    // cout << q.front( ) << " "  << q.back () << " "  << q.size () << endl;
     return 0;
 }
